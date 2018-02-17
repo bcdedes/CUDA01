@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 
-
+__device__ __managed__ int ret[1000];
 __global__ void add(int *a, int *b, int *c) {
 	*c = *a + *b;
 }
